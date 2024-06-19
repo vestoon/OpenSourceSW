@@ -5,7 +5,7 @@ from sklearn.cluster import KMeans
 # 1st) Clustering
 # First, change the ratings.dat file to User x Item matrix(i.e., 6040 x 3952 Numpy array)
 
-# Read ratings.dat
+# Read ratings.dat, *path is set for Colab environment. Please reset path if using other environment*
 ratings = np.genfromtxt("/content/ratings.dat", delimiter="::", dtype=np.int64, encoding="utf-8") # path after uploading ratings.dat
 ratings = ratings[:, :3] # remove timestamp
 
